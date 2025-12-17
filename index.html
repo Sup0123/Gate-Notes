@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GATE Study Notes - All Notes Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 GATE Study Notes</h1>
+            <p class="subtitle">Your complete collection of study materials</p>
+        </header>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="🔍 Search notes by name or subject..." class="search-input">
+            <select id="categoryFilter" class="category-filter">
+                <option value="all">All Categories</option>
+                <option value="go-classes">GO Classes</option>
+                <option value="kg-main">KG Classes - Main</option>
+                <option value="kg-graphics">KG Classes - Graphics</option>
+                <option value="kg-engmath">KG Classes - Eng math</option>
+                <option value="kg-cprog">KG Classes - c prog</option>
+                <option value="math">Mathematics</option>
+                <option value="cs">Computer Science</option>
+                <option value="programming">Programming</option>
+            </select>
+        </div>
+
+        <div class="stats">
+            <span id="totalNotes">0</span> notes available
+        </div>
+
+        <main id="notesContainer" class="notes-container">
+            <!-- Notes will be dynamically inserted here -->
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
